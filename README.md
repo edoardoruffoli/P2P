@@ -48,3 +48,36 @@ The discovery server supports the following operations:
  - `add <type> <quantity>`: updates the daily register.
  - `get <aggr> <type> <period>`: requires aggregated data (see assignment for more details).
  - `stop`: disconnects the peer from the network.
+
+Example of peer execution:
+```
+**********************PEER 4240**********************
+Digita un comando:
+
+1) start <DS_addr> <DS_port>  -->  connette il client al DS specificato
+2) add <type> <quantity>  -->  aggiorna il registro della data corrente
+3) get <aggr> <type> <period>  -->  richiede dato aggregato 
+4) stop  -->  disconnette il peer dal network
+
+> start 127.0.0.1 4242
+Invio richiesta di connessione al network 127.0.0.1:4242
+Connessione riuscita
+
+> add tampone 100
+Entry aggiunta
+
+> add nuovo caso 20
+Entry aggiunta
+
+> get variazione N 10:12:2020-15:12:2020
+Variazione 11:12:2020: -3000
+Variazione 12:12:2020: 0
+Variazione 13:12:2020: 0
+Variazione 14:12:2020: 8000
+Variazione 15:12:2020: -8000
+
+> stop
+Invio richiesta di uscita dal network 127.0.0.1:4242
+Disconnessione avvenuta
+
+```
