@@ -3,10 +3,6 @@
 P2P command line application for the distribution of info about Covid19 cases using C socket
 realized for the course in Networking @ University of Pisa.
 
-<p align="center">
-  <img src="docs/network_architecture.png" width="350" title="hover text">
-</p>
-
 Refer to the [project assignment](docs/requirements.pdf) to check all the requirements and to the 
 [report](docs/report.pdf) to read the design choices that I made.
 
