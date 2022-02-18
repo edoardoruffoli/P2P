@@ -8,8 +8,8 @@ Refer to the [project assignment](docs/requirements.pdf) to check all the requir
 
 ## Project structure
  - `data`: contains the peer's daily registries
- - `docs`: contains the assignment and the report
- - `test`: contains some registries to test the functionalities of the application
+ - `docs`: assignment and the report
+ - `test`: registries to test the functionalities of the application
  - `ds.c`: discovery server
  - `peer.c`: peer
  - `exec.sh`: bash script that launches the server and 5 peers
