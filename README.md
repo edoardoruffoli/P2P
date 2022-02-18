@@ -3,7 +3,18 @@
 P2P command line application for the distribution of info about Covid19 cases using C socket
 realized for the course in Networking @ University of Pisa.
 
-The [project assignment](docs/requirements.pdf) requires to:
+Refer to the [project assignment](docs/requirements.pdf) to check all the requirements of the project and to the 
+[report](docs/report.pdf) to read the design choices that I made.
+
+## Project structure
+ - `data`: contains the peer's daily registries
+ - `docs`: contains the assignment and the report
+ - `test`: contains some registries to test the functionalities of the application
+ - `ds.c`: discovery server
+ - `peer.c`: peer
+ - `exec.sh`: bash script that launches the server and 5 peers
+
+## Usage
 
 The discovery server can be started with the following syntax:
 ```
